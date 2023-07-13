@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card 이미지 만들기</title>
+    <style>
+        .card {
+            background-color: white;
+            width: 288px;
+            height: 328px;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: 2px 2px 8px rgb(0,0,0,0.1);
+        }
+        .box{
+            position: absolute;
+        }
+        .box2 {
+            position: absolute;
+            top: 220px;
+            left: 16px;
+        }
+        .box img{
+            height: 196px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border-radius: 8px 8px 0px 0px; /* 이거는 카드 전체에서 적용이 안되나?*/
+        }
+        .card .box2 p{
+            width: 256px;
+            font-size: 12px;
+            color: #5A6A72;
+        }
+        .Read{
+            left: 6px;
+            position: absolute;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="box">
+            <img src="./images/thumbnail.png" alt="썸네일">
+        </div>
+        <div class="box2">
+            <strong>그것을 피가 청춘을 것이다</strong>
+            <p>청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을 용기가 충분히 청춘 것이다. 얼마나 반짝이는 소담스러운</p>
+            <strong class="Read">Read</strong>
+        </div>
+    </div>
+</body>
+</html>

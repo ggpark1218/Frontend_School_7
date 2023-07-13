@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root{
+            --main--color: royalblue;
+            --pane-padding: 0.5em 2em;
+            --border-radius: 0.4em;
+            
+        }
+
+        .dark{
+            --background-color: #000;
+            --color1: white;
+        }
+
+        .light{
+            --background-color: #eee;
+            --color1: black;
+        }
+
+        section{
+            --color2: red;
+            background-color: var(--background-color);
+        }
+
+        button{
+            --border-width: 1px 2px 3px 4px;
+
+            color: var(--main--color, blue);
+            border-color: var(--main--color, blue);
+            padding: var(--pane-padding);
+            border-width: var(--border-width);
+            border-bottom: 3px solid var(--color2);
+        }
+    </style>
+</head>
+<body>
+    <div class="dark">
+        <button type="button">
+            버튼
+        </button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, suscipit corporis magnam quasi dicta magni laboriosam fugit pariatur amet necessitatibus doloremque. Omnis temporibus aspernatur suscipit veniam, quidem atque deleniti dolore.</p>
+    </div>
+    <div class="light">
+        <button type="button">
+            버튼
+        </button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, suscipit corporis magnam quasi dicta magni laboriosam fugit pariatur amet necessitatibus doloremque. Omnis temporibus aspernatur suscipit veniam, quidem atque deleniti dolore.</p>
+    </div>
+</body>
+</html>

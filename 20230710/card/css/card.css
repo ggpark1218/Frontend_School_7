@@ -1,0 +1,56 @@
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+h1,
+h2{
+    font: inherit;
+}
+
+a{
+    color: inherit;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: 'Pretendard-Regular', sans-serif;
+
+}
+
+.card-ui{
+    background-color: skyblue;
+    width: 328px;
+    border-radius: 8px;
+    overflow: hidden; /*주의할 점: 밖으로 삐져나와야하는 게 있으면 안됨*/
+}
+
+.card-ui img{
+    width: 100%; /*나중에 아티클의 위드값이 바뀔 것을 고려*/
+    aspect-ratio: 288/196;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-ui h2{
+    font-family: 'Pretendard-Bold';
+}
+
+.card-ui p {
+    font-size: 14px;
+    color: #5a6a72;
+}
+
+.card-ui a {
+    font-family: 'Pretendard-Bold';
+}
+
+.card-ui .content{}

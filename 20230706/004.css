@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    text-align: center;
+    background-color: aqua;
+}
+
+h1{
+    font-family: 'Diphylleia', serif;
+    font-weight: bold;
+    color: blue;
+}
+
+p{
+    font-family: 'KCCChassam', "Times New Roman";
+}
+
+.sec2 {
+    text-decoration: underline solid;
+
+}
+
+strong{
+    text-decoration: underline wavy dashed;
+    text-shadow: 2px 2px 2px gray;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+/* @font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+body{
+    color: red;
+}
+h1, h2{
+    font-weight: normal;
+}
+h1{
+    color: royalblue;
+}
+
+strong{
+    border-bottom: 5px solid currentColor;
+}
+
+h2{
+    color: #999;
+    font-family: 'Bagel Fat One', cursive;
+}

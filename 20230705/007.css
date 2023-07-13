@@ -1,0 +1,26 @@
+/* 아이디 선택자 */
+#title{
+    text-decoration: underline;
+}
+/* 클래스 선택자 */
+.my {
+    color: slateblue;
+}
+
+/* h2+p{
+    color: aqua;
+} */
+/* 형제 인접 선택자 */
+.my+p{
+    color: aqua;
+}
+
+/* 자손 선택자 */
+/* strong{
+    background-color: yellow;
+} */
+
+/* 자식 선택자 */
+.sec2 > strong {
+    background-color: yellow;
+}
