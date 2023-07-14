@@ -1,0 +1,81 @@
+/* 최상단에 타입 셀렉터로 기본스타일 초기화 */
+h1, h2, ul, p{
+    /* initial은 인터넷 익스플로러에서 지원이 안 됨 -> 그래서 실무적으로는 margin:0 함*/
+    margin: unset;
+    padding: unset;
+}
+
+li{
+    list-style-type: none;
+}
+
+h1, h2{
+    font-size: inherit;
+    font-weight: unset;
+}
+
+body{
+    background-image: url(images/background.gif)
+}
+.wrapper{
+    background-color: #ddd;
+    width: 800px;
+    margin: 100px auto;
+}
+
+.header{
+    background-image: url(images/cover04.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.header img{
+    display: block;
+    margin: 0 auto;
+}
+
+.header h1{
+    /* 텍스트 얼라인은 h1을 가운데로 옮기는 게 아니라 컨텐츠를 가운데로 */
+    /* 텍스트 너비 만큼의 위쓰 설정은 fit-content */
+    /* 위쓰를 설정해놓아야만 마진 영 오토 사용 가능. 왜냐? 위쓰가 오토면 전체사용가능한 공간이 없어서 설정해줘야함 */
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.header p{
+    border-top: 4px solid white;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.section{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    background-image: url(images/icon-information.png);
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+}
+
+.skill{
+    background-image: url(images/icon-skills.png);
+}
+
+.section h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: salmon;
+}
+
+.list li {
+    border-left: 5px solid #ddd;
+    padding-left: 5px;
+}
+
+.footer{
+    background-color: f4f4f4;
+}
