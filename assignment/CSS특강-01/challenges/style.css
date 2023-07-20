@@ -1,0 +1,46 @@
+h1, h2, ul, p{
+    margin: unset;
+    padding: unset;
+    font-family: 'Arial';
+}
+
+h1, h2{
+    font-size: inherit;
+    font-weight: unset;
+}
+
+img{
+    vertical-align: top;
+}
+
+body{
+    background-image: url(images/bg.png)
+}
+
+.wrapper{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contents{
+    width: 300px;
+    height: 306px;
+    background-color: #9C6035;
+    border-radius: 0 0 30px 30px;
+    border-bottom: 10px solid #46260E;
+
+}
+
+.contents h1{
+    padding: 10px 0 0 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contents p{
+    padding: 10px 20px 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #E8BC9C;
+}
