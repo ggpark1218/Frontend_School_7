@@ -1,0 +1,79 @@
+body,
+h1,
+h2,
+p,
+ul,
+button{
+    padding: 0;
+    margin: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+input{
+    font: inherit;
+}
+
+button:enabled{
+    cursor: pointer;
+    font: inherit;
+}
+
+img{
+    vertical-align: top;
+}
+
+
+h1{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* css적용 */
+body{
+    background-color: #eae8fe;
+}
+
+h1{
+    text-align: center;
+}
+
+h1 img{
+    max-width: 50%;
+}
+
+
+main{
+    width: 748px;
+    margin: 67px auto;
+    display: grid;
+    grid-template-areas: 
+    'sec1 sec2'
+    'sec1 sec3';
+    gap: 20px 28px;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+@media (max-width: 748px) { 
+    main{
+        display: grid;
+        grid-template-areas: 
+        'sec1'
+        'sec2'
+        'sec3';
+        grid-template-columns: 100%;
+        margin: 18px auto;
+    }
+}
+
+.sec1{
+    grid-area: sec1;
+}
+.sec2{
+    grid-area: sec2;
+}
+.sec3{
+    grid-area: sec3;
+}
