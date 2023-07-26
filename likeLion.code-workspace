@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "likeLion",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "likeLion"
+	}
+}
