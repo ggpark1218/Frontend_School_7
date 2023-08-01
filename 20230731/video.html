@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 반응형</title>
+    <style>
+        video{
+            /* max-width: 100%; */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100vh; /* 뷰포트에 맞춰서 크기 보여줌 */
+            /* min-height: 100%; */
+            opacity: 0.2;
+        }
+
+        .video-next-level {
+            
+        }
+    </style>
+</head>
+<body>
+    <article class="cont-video">
+        <iframe class="video-next-level"
+                src="https://www.youtube.com/embed/4TWR90KJl84?autoplay=1&mute=1&loop=1&playlist=4TWR90KJl84&controls=1"
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </article>
+
+</body>
+</html>
