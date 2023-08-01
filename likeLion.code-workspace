@@ -3,6 +3,9 @@
 		{
 			"name": "likeLion",
 			"path": "."
+		},
+		{
+			"path": "../programmers"
 		}
 	],
 	"settings": {
