@@ -4,6 +4,7 @@
     <title>javascript console</title>
 </head>
 <body>
+    <button id="submitBtn">눌럿!</button>
     <script>
         // 변수는 포스트잇이다.
 
@@ -36,7 +37,7 @@
         // let ..\user\document  = 10; //error
         // let $__$ = 548; // 이렇게 쓰지마세요.
         // let $,_ = 10; // 이렇게 쓰지마세요.
-        let _ = 100; // 반복문 돌 때 의미없는 변수에 사용
+        let _ = 100; // 이렇게 쓰지 마세요. 다만 반복문 돌 때 의미없는 변수에 사용.
         // let __ = 100; // 이렇게 쓰지마세요.
 
         // let π = 100; // 사용하지는 않는데 책에 잘못된 내용이 많습니다.
@@ -45,6 +46,10 @@
         // console.log(π + π);
 
         // 변수는 let, const, var, if, else 이런 지정된 키워드로(예약어) 사용하지 않습니다.
+        const submitBtn = document.querySelector('#submitBtn');
+        submitBtn.addEventListener('click', function() {
+            alert('눌렀다!!!');
+        });
     </script>
 </body>
 </html>

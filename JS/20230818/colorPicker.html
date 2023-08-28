@@ -39,27 +39,35 @@
 <body>
     <div class="canvas"></div>
     <ul>
-        <li><button type="button" class="btn-red">빨강</button></li>
-        <li><button type="button" class="btn-yellow">노랑</button></li>
-        <li><button type="button" class="btn-green">초록</button></li>
+        <li><button type="button" class="red">빨강</button></li>
+        <li><button type="button" class="yellow">노랑</button></li>
+        <li><button type="button" class="green">초록</button></li>
     </ul>
 
     <script>
         const canvas = document.querySelector('.canvas'),
-            btns = document.querySelectorAll('[class^=btn]');
+            btns = document.querySelectorAll('button');
 
-        btns.forEach((itemBtn) => {
-            itemBtn.addEventListener('click', () => {
-                canvas.classList.remove('red', 'yellow', 'green');
-                if (itemBtn.classList.contains('btn-red')) {
-                    canvas.classList.add('red');
-                } else if (itemBtn.classList.contains('btn-yellow')) {
-                    canvas.classList.add('yellow');
-                } else if (itemBtn.classList.contains('btn-green')) {
-                    canvas.classList.add('green');
-                }
+        btns.forEach(function (itemBtn) {
+            itemBtn.addEventListener('click', function () {
+                canvas.className = 'canvas';
+                canvas.classList.add(itemBtn.className);
             });
         });
+
+
+        // btns.forEach((itemBtn) => {
+        //     itemBtn.addEventListener('click', () => {
+        //         canvas.classList.remove('red', 'yellow', 'green');
+        //         if (itemBtn.classList.contains('btn-red')) {
+        //             canvas.classList.add('red');
+        //         } else if (itemBtn.classList.contains('btn-yellow')) {
+        //             canvas.classList.add('yellow');
+        //         } else if (itemBtn.classList.contains('btn-green')) {
+        //             canvas.classList.add('green');
+        //         }
+        //     });
+        // });
 
 
         // btnRed.addEventListener('click', function () {
