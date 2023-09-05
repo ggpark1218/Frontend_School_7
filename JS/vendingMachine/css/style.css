@@ -174,11 +174,14 @@ main {
 }
 
 /* 선택한 버튼 */
-.btn-cola.on {
+/* .btn-cola.on {
   box-shadow: 0 0 0 4px #6327fe;
-}
+} */
 
 /* 품절된 버튼 */
+.btn-cola:active {
+  box-shadow: 0 0 0 4px #6327fe;
+}
 .btn-cola:disabled {
   color: inherit;
   position: relative;
