@@ -1,0 +1,126 @@
+.wrapper {
+    justify-content: center;
+}
+.main-box {
+    background: linear-gradient(144deg, #5572BB 2.13%, #374B7C 102.97%);
+    width: 400px;
+    height: 360px;
+    border-radius: 16px;
+}
+.img-weniv{
+    display: block; 
+    margin: 0px auto;
+    padding-top: 72px;
+    padding-bottom: 60px;
+}
+
+.main-box{
+    display: felx;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-txt{
+    padding-top: 48px;
+    padding-bottom: 23px;
+    font-family: 'Pretendard-Bold';
+    font-size: 24px;
+    color: #FFF;
+}
+
+.line{
+    border: 1px solid #3D538A;
+    margin: 0 auto;
+    width: 312px; 
+}
+
+.line2{
+    border: 1px solid #5B75B4;
+    margin: 33px auto;
+    width: 312px; 
+}
+
+.txt-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 86px 0 86px;
+
+    font-family: 'Pretendard-Bold';
+    font-size: 12px;
+    color: #A5B6EE;
+}
+
+.img-boxs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap : wrap;
+    padding: 4px 58px 0 58px;
+    position: relative;
+}
+
+.time-in-box{
+    position: absolute;
+    top: 50%;
+    font-family: 'Pretendard-Bold';
+    font-size: 40px;
+    color: #FFF;
+}
+.hrs{
+	left: 24.5%;
+    transform: translate( -50%, -50% );
+}
+.min {
+    left: 43.5%;
+    transform: translate( 0%, -50% );
+}
+.sec{
+    left: 69%;
+    transform: translate( 0%, -50% );
+}
+
+.dot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap : wrap;
+    padding: 25px 8px 0 8px;
+    width: 6px;
+    height: 26px;
+}
+
+.buttons{
+    padding: 40px 82px 40px 82px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0 23px;
+    width: 112px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    background-color: #324577;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.05) inset;
+
+    font-family: 'Pretendard-Bold';
+    font-size: 14px;
+    color: #617199;
+}
+
+.svg-btn{
+    fill: #617199;
+}
+
+footer {
+    padding: 60px 0;
+    text-align: center;
+}
+

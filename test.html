@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        // 1. 변경하려는 요소를 선택합니다.
+        const rootDiv = document.getElementById('root');
+
+        // 2. 새로운 요소를 생성합니다.
+        const containerDiv = document.createElement('div');
+        containerDiv.className = 'container';
+
+        const h1Element = document.createElement('h1');
+        h1Element.id = 'ir';
+        h1Element.textContent = '테스트 페이지';
+
+        const sectionElement = document.createElement('section');
+
+        const h2Element = document.createElement('h2');
+        h2Element.className = 'section-title';
+        h2Element.textContent = '섹션제목';
+
+        const imgElement = document.createElement('img');
+        imgElement.className = 'section-img';
+        imgElement.setAttribute('src', 'img.jpg');
+        imgElement.setAttribute('alt', '섹션이미지');
+
+        const pElement = document.createElement('p');
+        pElement.className = 'section-contents';
+        pElement.textContent = '내용';
+
+        // 3. 선택한 요소에 새로운 요소를 추가합니다.
+        sectionElement.appendChild(h2Element);
+        sectionElement.appendChild(imgElement);
+        sectionElement.appendChild(pElement);
+
+        containerDiv.appendChild(h1Element);
+        containerDiv.appendChild(sectionElement);
+
+        rootDiv.appendChild(containerDiv);
+
+    </script>
+</body>
+</html>
